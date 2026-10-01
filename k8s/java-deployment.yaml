@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: redis
+  name: java-app
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
-      app: redis
+      app: java-app
   template:
     metadata:
       labels:
-        app: redis
+        app: java-app
     spec:
       containers:
-        - name: redis
-          image: redis:7
+        - name: java-app
+          image: beko2/java-app:v1
           ports:
-            - containerPort: 6379
+            - containerPort: 8080
