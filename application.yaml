@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/nbeksultan/java-redis-gitops.git
+    repoURL: https://github.com/beksultanccc/java-redis-gitops.git
     targetRevision: HEAD
     path: k8s
 
